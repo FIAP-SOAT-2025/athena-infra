@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "lambda_code" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "terraform-state-tc3-g38-lanchonete-v1"
+  bucket = "terraform-state-tc5-g192-athena-v1"
   tags = {
     Name = "Terraform Infra Directory"
   }

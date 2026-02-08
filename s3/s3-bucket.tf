@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "lambda_code" {
-  bucket = "lambda-code-tc3-g38-v1"
+  bucket = "lambda-code-tc5-g192-v1"
   tags = {
     Name = "Store lambda"
   }

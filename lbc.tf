@@ -32,6 +32,6 @@ resource "helm_release" "aws_load_balancer_controller" {
 
   set {
     name  = "vpcId"
-    value = aws_vpc.vpc_TC3_G38.id
+    value = aws_vpc.vpc_TC5_G192.id
   }
 }

@@ -81,7 +81,7 @@ output "cluster_security_group_id" {
 
 output "vpc_id" {
   description = "ID da VPC"
-  value       = aws_vpc.vpc_TC3_G38.id
+  value       = aws_vpc.vpc_TC5_G192.id
 }
 
 output "private_subnet_ids" {

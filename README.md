@@ -99,5 +99,5 @@ Os principais recursos da AWS criados por este projeto são:
 
 Este projeto possui um módulo local no diretório `s3/` que cria dois buckets S3:
 
-*   `lambda-code-tc3`: Para armazenar o código Lambda.
+*   `lambda-code-tc5`: Para armazenar o código Lambda.
 *   `terraform-state-tc5-g192-athena`: Para armazenar o estado do Terraform do módulo `infra`.

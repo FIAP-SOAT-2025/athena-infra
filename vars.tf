@@ -6,7 +6,7 @@ variable "aws_region" {
 
 variable "projectName" {
   description = "The name of the project"
-  default     = "tc5-g192-athena"
+  default     = "tc5-g192-athena-v1"
 }
 
 variable "cidr_vpc" {

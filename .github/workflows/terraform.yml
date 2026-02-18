@@ -57,7 +57,7 @@ jobs:
       
       - name: Configure Kubectl
         run: |
-          aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name eks-tc5-g192-athena-v1
+          aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name eks-tc5-g192-athena
           echo "Kubeconfig configured successfully!"
 
       - name: Deploy NGINX Ingress Controller

@@ -1,4 +1,4 @@
-resource "aws_eks_cluster" "cluster" {
+ resource "aws_eks_cluster" "cluster" {
   name = "eks-${var.projectName}-v1"
 
   access_config {

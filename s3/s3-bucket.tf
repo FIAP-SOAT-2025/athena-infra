@@ -12,3 +12,9 @@ resource "aws_s3_bucket" "terraform_state" {
   }
 }
 
+resource "aws_s3_bucket" "videos-directory" {
+  bucket = "athena-videos"
+  tags = {
+    Name = "Terraform Videos Directory"
+  }
+}

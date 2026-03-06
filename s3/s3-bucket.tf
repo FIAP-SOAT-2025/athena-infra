@@ -13,7 +13,7 @@ resource "aws_s3_bucket" "terraform_state" {
 }
 
 resource "aws_s3_bucket" "videos-directory" {
-  bucket = "athena-videos"
+  bucket = "athena-videos-tc5-g192-v1"
   tags = {
     Name = "Terraform Videos Directory"
   }

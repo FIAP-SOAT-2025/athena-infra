@@ -1,7 +1,7 @@
 # athena-infra
-# Infraestrutura Terraform para tc5-g192-athena
+# Infraestrutura Terraform para tc5-g192-athena-v1-felipe
 
-Este projeto contém o código Terraform para provisionar a infraestrutura para o projeto **tc5-g192-athena** na AWS.
+Este projeto contém o código Terraform para provisionar a infraestrutura para o projeto **tc5-g192-athena-v1-felipe** na AWS.
 
 ## Descrição
 
@@ -74,9 +74,9 @@ Os principais recursos da AWS criados por este projeto são:
 | Nome                 | Descrição                               | Tipo   | Padrão                 |
 | -------------------- | ----------------------------------------- | ------ | ---------------------- |
 | `aws_region`         | A região da AWS para implantar os recursos.   | `string` | `us-east-1`            |
-| `projectName`        | O nome do projeto.                  | `string` | `tc5-g192-athena`   |
+| `projectName`        | O nome do projeto.                  | `string` | `tc5-g192-athena-v1-felipe`   |
 | `cidr_vpc`           | O bloco CIDR para a VPC.               | `string` | `10.1.0.0/16`          |
-| `tags`               | Um mapa de tags para atribuir a todos os recursos. | `map`    | `{ Name = "tc5-g192-athena" }` |
+| `tags`               | Um mapa de tags para atribuir a todos os recursos. | `map`    | `{ Name = "tc5-g192-athena-v1-felipe" }` |
 | `node_instance_type` | Tipo de instância EC2 para os nós de trabalho do EKS. | `string` | `t3.medium`            |
 
 ## Saídas
@@ -99,5 +99,5 @@ Os principais recursos da AWS criados por este projeto são:
 
 Este projeto possui um módulo local no diretório `s3/` que cria dois buckets S3:
 
-*   `lambda-code-tc5`: Para armazenar o código Lambda.
-*   `terraform-state-tc5-g192-athena`: Para armazenar o estado do Terraform do módulo `infra`.
+*   `lambda-code-tc5-g192-v1-felipe`: Para armazenar o código Lambda.
+*   `terraform-state-tc5-g192-athena-v1-felipe`: Para armazenar o estado do Terraform do módulo `infra`.

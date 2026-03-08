@@ -15,6 +15,8 @@ on:
 env:
   AWS_REGION: us-east-1
   TF_VERSION: 1.6.0
+  PROJECT_NAME: tc5-g192-athena-v1-felipe
+  EKS_CLUSTER_NAME: eks-tc5-g192-athena-v1-felipe
 
 jobs:
   terraform-apply:
@@ -57,7 +59,7 @@ jobs:
       
       - name: Configure Kubectl
         run: |
-          aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name eks-tc5-g192-athena-v1-v1
+          aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name ${{ env.EKS_CLUSTER_NAME }}
           echo "Kubeconfig configured successfully!"
 
       - name: Deploy NGINX Ingress Controller
@@ -70,7 +72,7 @@ jobs:
       - name: Save Terraform State
         run: |
           echo "Infrastructure deployed successfully!"
-          echo "EKS Cluster: eks-tc5-g192-athena"
+          echo "EKS Cluster: ${{ env.EKS_CLUSTER_NAME }}"
           echo "Region: ${{ env.AWS_REGION }}"
 
   terraform-destroy:

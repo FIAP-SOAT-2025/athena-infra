@@ -1,5 +1,5 @@
 resource "aws_security_group" "sg" {
-  name        = "${var.projectName}-sg-v1"
+  name        = "${var.projectName}-sg"
   description = "Security group for ${var.projectName} - Usado para export o service na internet"
   vpc_id      = aws_vpc.vpc_TC5_G192.id
 

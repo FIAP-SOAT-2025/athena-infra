@@ -1,5 +1,5 @@
 resource "aws_apigatewayv2_api" "http_api" {
-  name          = "http-api-athena-v1"
+  name          = "http-api-${var.projectName}"
   protocol_type = "HTTP"
 }
 

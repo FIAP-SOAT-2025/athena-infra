@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-tc5-g192-athena-v1"
-    key    = "infra/terraform.tfstate"
+    bucket = "terraform-state-tc5-g192-athena-v1-felipe"
+    key    = "tc5-g192-athena-v1-felipe/infra/terraform.tfstate"
     region = "us-east-1"
   }
   required_providers {

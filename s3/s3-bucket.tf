@@ -21,15 +21,15 @@ resource "aws_s3_bucket" "videos-directory" {
 
 variable "lambda_code_bucket" {
   description = "S3 bucket name used to store Lambda code artifacts"
-  default     = "lambda-code-tc5-g192-v1-felipe"
+  default     = "lambda-code-tc5-g192-v1"
 }
 
 variable "tf_state_bucket" {
   description = "S3 bucket name used for Terraform state"
-  default     = "terraform-state-tc5-g192-athena-v1-felipe"
+  default     = "terraform-state-tc5-g192-athena-v1"
 }
 
 variable "videos_bucket_name" {
   description = "S3 bucket name used to store videos"
-  default     = "athena-videos-tc5-g192-v1-felipe"
+  default     = "athena-videos-tc5-g192-v1"
 }
